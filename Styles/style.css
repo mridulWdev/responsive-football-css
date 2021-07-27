@@ -1,19 +1,20 @@
 /* font style */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+
+/* Navbar and Header style */
 header{
     width: 100%;
     height: 677px;
     background-color: #2D25A0;
-    
+    transition: width 2s;
 }
+
 
 .banner-container{
     margin-left: 100px;
     margin-right: 100px;
 }
-
-/* Navbar style */
 
 nav {
     display: flex;
@@ -68,10 +69,54 @@ nav a:hover{
     font-size: 30px;
     color: white;
     padding: 7px;
+    
+   
 }
+
 .half-width img{
     width: 500px;
     height: 448px;
     padding-left: 160px;
     
 }
+
+header:hover .half-width img{
+    width: 600px;
+    height: 482px;
+}
+
+/* players list  */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px; 
+    grid-column-gap: 45px;
+    padding-top: 70px;
+    padding-right: 150px;
+    padding-left: 120px;
+    padding-bottom: 165px;
+    
+
+}
+
+ .player{
+     display: flex; 
+     flex-direction: column;
+     padding: 10px;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     
+} 
+
+.player img{
+    width: 300px;
+    height: 256px;
+}
+
